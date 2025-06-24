@@ -13,7 +13,7 @@
 def calculator():
     num1 = int(input("Enter first number\n"))
     num2 = int(input("Enter second number\n"))
-    operation = input("pick one: multi,div,add,sub")
+    operation = input("pick one: multi,div,add,sub : ")
     if operation == "multi":
         return num1 * num2
     elif operation == "div":
@@ -25,3 +25,4 @@ def calculator():
 
 
 print(calculator())
+
