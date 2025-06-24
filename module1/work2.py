@@ -9,8 +9,12 @@ def getvowel():
     for char in word:
         if char == "a" or char == "e" or char == "i" or char =="o" or char == "u":
             vowels += char
-    return vowels
+
+    print(len(vowels))
+    print(vowels)
 
 
 
-print(getvowel())
+
+
+getvowel()
