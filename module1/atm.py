@@ -63,29 +63,5 @@ Algorithm:
 '''
 
 #ATM simulation
-def atmV3():
-    atm_pin = 12345
-    user_pin = int(input("What is your PIN\n"))
-    if atm_pin != user_pin:
-        print("That is not correct")
-
-    else:
-        while True:
-            user_balance = 10000.00
-
-            user_input = input("What do you want to do? Please enter option 1,2,3,4 as a number. \n Option 1: Check Balance \n Option 2: Deposit Money  \n Option 3: Withdraw Money \n Option 4: Exit \n")
-            if user_input == "1":
-                print("Your Balance is",user_balance)
-            elif user_input ==  "2":
-                depositmoney = float(input("Please enter money to be deposited\n"))
-                print("Your  new balance is", user_balance+depositmoney)
-            elif user_input == "3":
-                withdrawnmoney = float(input("Please enter money to be withdrawn\n"))
-                print("Please collect",withdrawnmoney,".","\n","Your new balance is",user_balance-withdrawnmoney)
-            else:
-                print("Thank you")
-                break
-
-(atmV3())
 
 
