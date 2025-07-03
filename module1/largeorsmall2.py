@@ -32,5 +32,4 @@ def findminandmax(list):
     if max == min: #if number are duplicated
         print("All numbers are the same")
 
-list = []
 findminandmax(list)
