@@ -1,3 +1,15 @@
-age = 8
-age *= 8# age = age * 8
-print(age)
+print("samvith person".islower())
+name = "Samvith"
+print(name.lower())
+print(len(name))
+print("th" in name)
+name = 'Samvith is cool'
+print(name[7:])
+done = "beau"
+
+print(type(done) == bool)
+
+if done:
+    print("Yes")
+else:
+    print("No")
