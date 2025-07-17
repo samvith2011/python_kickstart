@@ -60,9 +60,38 @@ dogs = ["Roger",1,"Syd",True,"Quicny",7]
 dogs[2] = "beau"
 dogs.remove("Quicny")
 print(dogs.pop())
-print(dogs)'''
+print(dogs)
 items = ["Roger","bob","Beau","Quincy"]
 
 print(sorted(items,key=str.lower))
 print(items)
+
+#Tuples
+
+names = ("Roger","Syd","Adam")
+names[-1]
+len(names)
+
+print("Roger" in names)
+names[0:2]
+print(sorted(names))
+newTuple = names + ""
+
+#Dictionares
+
+dog = {"name": "Roger","age": 8,"color":"green"}
+dog["favorite food"] = "meat"
+
+del dog['color']
+
+dogcopy = dog.copy
+print(dog)'''
+
+set1 = {"Roger","Syd","Roger"}
+set2 = {"Roger"}
+
+
+print(list(set1))
+
+
 
