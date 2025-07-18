@@ -85,13 +85,26 @@ dog["favorite food"] = "meat"
 del dog['color']
 
 dogcopy = dog.copy
-print(dog)'''
+print(dog)
 
 set1 = {"Roger","Syd","Roger"}
 set2 = {"Roger"}
 
 
-print(list(set1))
+print(list(set1))'''
+#Functions
 
+
+def test():
+    age = 8
+    print(age)
+
+print(age)
+test()
+
+cc
+d
+
+ji
 
 
