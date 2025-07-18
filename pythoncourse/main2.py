@@ -102,9 +102,6 @@ def test():
 print(age)
 test()
 
-cc
-d
 
-ji
 
 
