@@ -121,7 +121,7 @@ def count():
 
     increment()
 
-count()'''
+count()
 def counter():
     count = 0
 
@@ -135,7 +135,9 @@ def counter():
 increment = counter()
 print(increment())
 print(increment())
-print(increment())
+print(increment()'''
+
+#Objects
 
 
 
