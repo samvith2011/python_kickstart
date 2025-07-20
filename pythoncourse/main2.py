@@ -135,9 +135,41 @@ def counter():
 increment = counter()
 print(increment())
 print(increment())
-print(increment()'''
-
+print(increment())
 #Objects
 
+age = 8
 
+print(age.real)
+print(age.imag)
+print(age.bit_length())
+
+items = [1,2,]
+items.append(3)
+items.pop()
+print(id(items))'''
+condition  = True
+
+while condition == True:
+    print("The condition is true")
+    condition = False
+
+count = 0
+while count < 10:
+    print("The condition is true")
+    count += 1
+
+print("After the loop")
+
+items = [1,2,3,4]
+
+for item in items:
+    print(item)
+
+for item in range(15):
+    print(item)
+
+items = ["samvith","syd","quincy"]
+for index,item in enumerate(items):
+    print(index,item)
 
