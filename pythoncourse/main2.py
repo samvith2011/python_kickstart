@@ -147,7 +147,7 @@ print(age.bit_length())
 items = [1,2,]
 items.append(3)
 items.pop()
-print(id(items))'''
+print(id(items))
 condition  = True
 
 while condition == True:
@@ -172,4 +172,60 @@ for item in range(15):
 items = ["samvith","syd","quincy"]
 for index,item in enumerate(items):
     print(index,item)
+items = [1,2,3,4]
+for item in items:
+    if item == 2:
+        break
+    print(item)
+#Classes
+
+class Animal:
+    def walk(self):
+        print("Walking...")
+
+
+class Dog(Animal):
+    def __init__(self, name,age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        print("Woof")
+
+roger = Dog("Roger", 8)
+print(roger.name)
+print(roger.age)
+roger.bark()
+roger.walk()
+#Module
+from dog import bark
+
+bark()
+from math import sqrt
+print(sqrt(4))
+# Accepting Arguemnts
+import sys
+
+name = sys.argv[1]
+
+print(sys.argv)
+import argparse
+
+parser = argparse.ArgumentParser(
+    description='This is the anme of my cat'
+)
+parser.add_argument('-c','--color',metavar='color',
+required=True,choices=('red','yellow'),help ='the color to search for')
+
+args = parser.parse_args()
+
+
+print(args.color)'''
+#Lambda functions
+
+lambda num : num * 2
+
+multiply = lambda a, b : a * b
+
+print(multiply(2,4))
 
