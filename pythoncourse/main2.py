@@ -220,7 +220,7 @@ required=True,choices=('red','yellow'),help ='the color to search for')
 args = parser.parse_args()
 
 
-print(args.color)'''
+print(args.color)
 #Lambda functions
 
 lambda num : num * 2
@@ -228,4 +228,106 @@ lambda num : num * 2
 multiply = lambda a, b : a * b
 
 print(multiply(2,4))
+#map, filter, reduce
 
+def double(a):
+    return a * 2
+
+numbers = [1,2,3]
+
+result = map(double, numbers)
+
+print(list(result))
+
+numbers2 = [1,2,3]
+
+
+result = map(lambda b : b * 2, numbers2)
+
+print(list(result))
+numbers = [1,2,3,4,5,6]
+
+
+
+
+results = filter(lambda n : n % 2 == 0,numbers)
+print(list(results))
+expenses = [
+    ('Dinner',80),
+    ('Car repair',120)
+
+]
+
+sum = 0
+for expense in expenses:
+    sum += expense[1]
+print(sum)
+from functools import reduce
+
+expenses = [
+    ('Dinner',80),
+    ('Car repair',120),
+    #("Kitten",50)
+    ('Kitten',120)
+]
+
+sum = reduce(lambda a, b: a + b[1], expenses, 0)
+
+
+#Recursion
+def factorial(n):
+    if n == 1:
+        return 1
+    print( n , ' * ' , (n-1), '!' )
+    return n * factorial(n-1)
+
+print(' = ', factorial(3))
+#Decorators
+
+def logtime(func):
+    def wrapper():
+        print("before")
+        val = func()
+        print("after")
+        return val
+    return wrapper
+
+@logtime
+def hello():
+    print("hello")
+
+hello()
+#Docstrings
+
+def increment(n):
+    Increments a number
+    return n + 1
+
+print(help(increment))
+#annotations
+def increment(n: int) -> int:
+    return n+1
+count: int = 0'''
+#exceptions
+'''
+try:
+    result = 2/0
+except ZeroDivisionError:
+    print("Cannot divide by 0")
+finally:
+    result = 1
+
+print(result)
+raise Exception("An error!")
+
+try:
+    raise Exception('An error')
+except Exception as error:
+    print(error)'''
+class DogNotFoundException(Exception):
+    print("Inside")
+    pass
+try:
+    raise DogNotFoundException()
+except DogNotFoundException:
+    print("Dog not found")
