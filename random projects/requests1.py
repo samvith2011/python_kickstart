@@ -1,5 +1,5 @@
 import requests as r
-#Work in progress
+#Fixed
 site = r.get("https://www.youtube.com/")
 
-print(site.text.count("67"))
+print(site.text.count("youtube"))
