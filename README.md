@@ -1,2 +1,2 @@
 # python_kickstart
-Some python code and a little html code by me
+Some python and html code by me
