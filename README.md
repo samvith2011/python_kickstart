@@ -1,2 +1,2 @@
 # python_kickstart
-Python fundamentals
+Python stuff
