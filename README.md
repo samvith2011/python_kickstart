@@ -1,2 +1,2 @@
 # python_kickstart
-Python stuff
+Some code stuff my me
